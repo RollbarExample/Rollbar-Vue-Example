@@ -80,13 +80,7 @@ jobs:
             - run:
                 name: Deploy to S3
                 command: |
-                    curl https://api.rollbar.com/api/1/sourcemap/ \
-                        -F access_token=fb5452dafc754157a37c0f07ad0e2b78 \
-                        -F version=$CIRCLE_SHA1 \
-                        -F minified_url=https://s3.us-east-2.amazonaws.com/rollbar-example/app.[hash].js \
-                        -F source_map=@static/js/app.[hash].js.map \
-                        -F App.vue=./src/App.vue
-
+                
                     if [ "${CIRCLE_BRANCH}" == "develop" ]; then
                         aws --region us-east-2 s3 sync dist s3://rollbar-example/ --delete --acl public-read
                     elif [ "${CIRCLE_BRANCH}" == "staging" ]; then
