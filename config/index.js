@@ -9,7 +9,7 @@ module.exports = {
 
     // Paths
     assetsSubDirectory: 'static',
-    assetsPublicPath: 'https://s3.us-east-2.amazonaws.com/rollbar-example/',
+    assetsPublicPath: '/',
     proxyTable: {},
 
     // Various Dev Server settings

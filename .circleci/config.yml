@@ -86,7 +86,8 @@ jobs:
                         -F version=$CIRCLE_SHA1 \
                         -F minified_url=https://s3.us-east-2.amazonaws.com/rollbar-example/app.[hash].js \
                         -F source_map=static/js/app.[hash].js.map \
-                        -F App.vue=./src/App.vue
+                        -F App.vue=App.vue \
+                        -F HelloWorld.vue=HelloWorld.vue
 
 
                     if [ "${CIRCLE_BRANCH}" == "develop" ]; then
