@@ -85,7 +85,7 @@ jobs:
                         -F access_token=fb5452dafc754157a37c0f07ad0e2b78 \
                         -F version=$CIRCLE_SHA1 \
                         -F minified_url=https://s3.us-east-2.amazonaws.com/rollbar-example/app.[hash].js \
-                        -F source_map=static/js/app.[hash].js.map \
+                        -F source_map=@dist/static/js/app.[hash].js.map \
                         -F App.vue=App.vue \
                         -F HelloWorld.vue=HelloWorld.vue
 
