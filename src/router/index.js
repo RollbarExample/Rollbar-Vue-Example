@@ -7,7 +7,7 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: 'https://s3.us-east-2.amazonaws.com/rollbar-example/',
+      path: '/',
       name: 'HelloWorld',
       component: HelloWorld
     }
