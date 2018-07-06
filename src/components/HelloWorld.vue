@@ -3,7 +3,6 @@
     <h1>Rollbar Vue Example</h1>
     <ul>
       <li>
-      <parent></parent>
        <button v-on:click="parse">Generate an error</button>
       </li>
     </ul>
