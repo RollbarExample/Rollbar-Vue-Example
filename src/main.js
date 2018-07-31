@@ -2,6 +2,11 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 Vue.config.productionTip = false
+/*const bugsnagClient = bugsnag('4bbab171981be0c734928b2628b49741')
+// Initialize Vue before we start the BugsnagVue plugin
+
+const bugsnagVue = require('bugsnag-vue')
+bugsnagClient.use(bugsnagVue(Vue))*/
 var Rollbar = require('vue-rollbar');
 Vue.use(Rollbar, {
       accessToken: 'da15d7f183f44701ae91244b38f5501d',
@@ -13,7 +18,7 @@ Vue.use(Rollbar, {
       payload: {
         client: {
              javascript: {
-                code_version: '1.0'
+                code_version: '1.2'
              }
         }
       }
@@ -22,10 +27,7 @@ Vue.use(Rollbar, {
 new Vue({
   el: '#app',
   router,
-  render: h => h(App, Vue.config.errorHandler= err => {
-    console.log('handling error calling:')
-    Vue.rollbar.error(err);
-  })
+  render: h=> h(App)
 })
 
 

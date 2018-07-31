@@ -10,6 +10,8 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "bugsnag-js": "^4.7.2",
+    "bugsnag-vue": "^1.0.1",
     "raven-js": "^3.26.3",
     "vue": "^2.5.2",
     "vue-rollbar": "^0.2.2",
