@@ -11,7 +11,7 @@
 
 <script>
 //import Vue from 'vue'
-//import Parent from 'Parent'
+import Parent from './Parent'
 const Child = {
   //created () { debugger; throw new Error() },
   render(h) {
@@ -31,7 +31,6 @@ export default {
       json: '{ "not quite: json" }'
   }),
   methods: {
-    watch: {
       parse: function () {
        // try{
             JSON.parse(this.json)
@@ -39,9 +38,7 @@ export default {
           //Vue.config.errorHandler(e)
          // console.log('Exception : ',e)
        // }
-        
       }
-   } 
   }             
 }
 

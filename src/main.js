@@ -18,10 +18,10 @@ Vue.config.productionTip = false
         }
       }
 });*/
-/*Vue.config.errorHandler = function (err, vm, info) {
-  //console.log('hererereeeees')
+Vue.config.errorHandler = function (err, vm, info) {
+  console.log('hererereeeees')
  //Vue.rollbar.errr(err);
-}*/
+}
 
 new Vue({
   el: '#app',
