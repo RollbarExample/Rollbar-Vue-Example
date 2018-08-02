@@ -19,13 +19,14 @@ Vue.config.productionTip = false
       }
 });*/
 Vue.config.errorHandler = function (err, vm, info) {
-  console.log('hererereeeees')
+  console.error(err)
  //Vue.rollbar.errr(err);
 }
 
 new Vue({
   el: '#app',
-  router
+  router,
+  render: h=> h(App)
 })
 
 
