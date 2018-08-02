@@ -3,7 +3,6 @@ import App from './App'
 import router from './router'
 Vue.config.productionTip = false
 //var Rollbar = require('vue-rollbar');
-
 /*Vue.use(Rollbar, {
       accessToken: 'da15d7f183f44701ae91244b38f5501d',
       captureUncaught: true,
@@ -20,7 +19,7 @@ Vue.config.productionTip = false
       }
 });*/
 Vue.config.errorHandler = function (err, vm, info) {
-  console.log('hererereeeees')
+  //console.log('hererereeeees')
  //Vue.rollbar.errr(err);
 }
 

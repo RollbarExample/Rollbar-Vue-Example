@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import Vue from 'vue'
+//import Vue from 'vue'
 //import Parent from 'Parent'
 const Child = {
   //created () { debugger; throw new Error() },
