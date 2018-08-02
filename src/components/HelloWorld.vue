@@ -31,16 +31,18 @@ export default {
       json: '{ "not quite: json" }'
   }),
   methods: {
+    watch: {
       parse: function () {
        // try{
             JSON.parse(this.json)
        // }catch(e){
           //Vue.config.errorHandler(e)
-          console.log('Exception : ',e)
+         // console.log('Exception : ',e)
        // }
         
       }
-   }              
+   } 
+  }             
 }
 
 </script>
