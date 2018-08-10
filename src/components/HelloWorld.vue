@@ -36,6 +36,7 @@ export default {
             JSON.parse(this.json)
        // }catch(e){
           //Vue.config.errorHandler(e)
+          //Vue.rollbar.error()
          // console.log('Exception : ',e)
        // }
       }
